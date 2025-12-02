@@ -1,4 +1,25 @@
+<!--
+OmniPLC FC23 authenticated modbus writer security tool designed for ICS OT penetration
+testing, industrial protocol exploitation, Modbus TCP vulnerability assessment, PLC
+register write authentication bypass, insecure by design protocol demonstration,
+HackTheBox ICS lab exploitation, ethical security researcher toolkit,
+safe Python modbus automation, FC23 read/write multiple registers testing,
+operational technology risk validation, red teaming industrial networks,
+cyber-physical system security experiment.
+
+Key SEO: modbus hacking tool, PLC security audit, SCADA exploitation research,
+ICS protocol pen test script, function code 23 abuse, modbus password register,
+OmniPLC 3000 testing, HackTheBox Alchemy tools, industrial control threat simulation
+-->
+
 # OmniPLC FC23 Authenticated Modbus Writer
+![Status: Alpha](https://img.shields.io/badge/status-alpha-orange)
+![Protocol: Modbus](https://img.shields.io/badge/protocol-Modbus%20TCP-blue)
+![Function Code: 23](https://img.shields.io/badge/FC23-Read%2FWrite%20Multiple%20Registers-green)
+![Tested On: HTB Alchemy](https://img.shields.io/badge/tested-HTB%20Alchemy-purple)
+![ICS/OT Security](https://img.shields.io/badge/domain-ICS%20%2F%20SCADA-red)
+![MIT License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 **Protocol:** Modbus TCP (Function Code 23 - Read/Write Multiple Registers)  
 **Compatibility:** Tested with `pymodbus==3.0.0rc1`
 
@@ -19,6 +40,17 @@ This Python script performs **authenticated writes** to Modbus holding registers
   - Hex values (e.g. `0x64`)
   - ASCII strings
   - IEEE 754 float-to-register conversions (`--float` mode)
+
+
+### MITRE ATT&CK for ICS Mapping
+
+| Capability | ATT&CK Technique | ID |
+|-----------|-----------------|---|
+| Unauthorized Modbus Writes | Manipulation of Control | T0834 |
+| Targeting Registers/PLC Memory | Access to Program Organization Units | T0865 |
+| Privilege Abuse via Auth Registers | Exploitation for Evasion | T0828 |
+| Stateful Timing to Evade Detection | Inhibit Response Function | T0814 |
+| Reading Sensitive Register Data | Monitor Process State | T0809 |
 
 ---
 
@@ -74,3 +106,20 @@ This project is licensed under the [MIT License](LICENSE).
 
 
 
+<!--
+SEO Footer — OmniPLC FC23 Authenticated Modbus Writer
+
+Keywords:
+modbus unauthorized write detection, PLC register manipulation testing,
+ICS security exploitation demo, authenticated modbus payload injection,
+read/write multiple registers attack, OT red team support tools,
+pymodbus script for ethical SCADA research, hardware-in-the-loop testing,
+industrial cyber security awareness, MITRE for ICS mapping, HTB Alchemy ICS kit
+
+Audience:
+SCADA penetration testers, ICS defenders, security engineers, and OT red teams
+
+Purpose:
+Enable controlled, permission based evaluation of weak Modbus protections
+and authentication designs in research environments.
+-->
